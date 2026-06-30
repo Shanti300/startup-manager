@@ -1,0 +1,9 @@
+{
+  "types": [
+    { "id": "core", "label": "Core Product" },
+    { "id": "platform", "label": "Platform / Infra" },
+    { "id": "data", "label": "Data & Analytics" },
+    { "id": "security", "label": "Security" },
+    { "id": "dx", "label": "Developer Experience" }
+  ]
+}

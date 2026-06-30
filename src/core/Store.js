@@ -1,6 +1,6 @@
 /**
- * Store — Estado global del juego
- * Todo el estado vive aquí. Nadie muta el estado directamente.
+ * Store ï¿½ Estado global del juego
+ * Todo el estado vive aquï¿½. Nadie muta el estado directamente.
  * Solo se modifica via dispatch(action).
  */
 
@@ -126,7 +126,21 @@ function reduce(state, action) {
         ...state,
         developers: state.developers.filter((d) => d.id !== action.payload.id),
       }
+    case 'DEVELOPER_UPDATE':
+      return {
+        ...state,
+        developers: state.developers.map((d) =>
+          d.id === action.payload.id ? { ...d, ...action.payload.changes } : d
+        ),
+      }
 
+    case 'CELL_UPDATE':
+      return {
+        ...state,
+        cells: state.cells.map((c) =>
+          c.id === action.payload.id ? { ...c, ...action.payload.changes } : c
+        ),
+      }
     case 'CLIENT_ADD':
       return { ...state, clients: [...state.clients, action.payload] }
 
@@ -143,7 +157,7 @@ function reduce(state, action) {
       return { ...state, flags: { ...state.flags, [action.payload.key]: action.payload.value } }
 
     default:
-      console.warn(`[Store] Acción desconocida: ${action.type}`)
+      console.warn(`[Store] Acciï¿½n desconocida: ${action.type}`)
       return state
   }
 }
