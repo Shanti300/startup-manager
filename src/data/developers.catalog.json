@@ -1,0 +1,43 @@
+{
+  "firstNames": ["Alex","Morgan","Jordan","Taylor","Sam","Riley","Casey","Drew","Quinn","Avery","Lena","Marco","Sofia","Ivan","Priya","Chen","Amir","Nora","Lucas","Zoe"],
+  "lastNames": ["Rivera","Kim","Patel","Okafor","Müller","Santos","Novak","Tanaka","Osei","Reyes","Johansson","Mbeki","Cohen","Russo","Park","Andersen","Diaz","Nguyen","Hassan","Ferreira"],
+  "roles": {
+    "frontend": {
+      "label": "Frontend Dev",
+      "skills": ["React","Vue","Angular","Svelte","CSS avanzado","Web Components"],
+      "quirks": ["Solo trabaja con React","Perfeccionista con píxeles","Le obsesiona el dark mode","Reescribe todo en TypeScript"]
+    },
+    "backend": {
+      "label": "Backend Dev",
+      "skills": ["Node.js","Python","Java","Go","Rust","PostgreSQL","Redis","Kafka"],
+      "quirks": ["Odia los standups","Documenta todo o nada","Solo SQL puro","Le aterra el frontend"]
+    },
+    "fullstack": {
+      "label": "Full Stack Dev",
+      "skills": ["Node.js","React","Docker","REST APIs","GraphQL","MongoDB"],
+      "quirks": ["Nunca termina nada al 100%","Alto riesgo de burnout","Quiere ser Tech Lead","Opina de todo"]
+    },
+    "devops": {
+      "label": "DevOps Engineer",
+      "skills": ["Kubernetes","Terraform","AWS","GCP","CI/CD","Monitoring"],
+      "quirks": ["Habla solo en YAML","Automatiza hasta el café","Desconfía de todo sin pipeline","Vive en la terminal"]
+    },
+    "techlead": {
+      "label": "Tech Lead",
+      "skills": ["Arquitectura","Code review","Mentoring","RFC writing","System design"],
+      "quirks": ["Cuello de botella si no delega","Quiere ser CTO","Bloquea PRs por semanas","Demasiadas reuniones"]
+    },
+    "qa": {
+      "label": "QA Engineer",
+      "skills": ["Testing E2E","Playwright","Jest","Performance testing","Regression"],
+      "quirks": ["Eso no es un bug es un feature","Testea hasta los tests","Pesimista profesional","Rechaza todo sin evidencia"]
+    },
+    "data": {
+      "label": "Data Engineer",
+      "skills": ["Python","Spark","dbt","Airflow","BigQuery","Data modeling"],
+      "quirks": ["Necesita autonomía total","El dashboard nunca está listo","Pide más datos para pedir datos","Vive en Jupyter"]
+    }
+  },
+  "seniorityLevels": ["Junior","Mid","Senior","Staff"],
+  "seniorityWeights": [40, 35, 20, 5]
+}
