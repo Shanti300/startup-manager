@@ -1,0 +1,39 @@
+{
+  "synergies": [
+    {
+      "id": "platform_boosts_core",
+      "requires": ["platform", "core"],
+      "description": "Platform madura potencia Core Product",
+      "effect": { "target": "core", "stat": "throughputMultiplier", "value": 1.2 },
+      "minMaturity": { "platform": 3 }
+    },
+    {
+      "id": "dx_boosts_all",
+      "requires": ["dx"],
+      "description": "DX activo suma +1 velocity a toda la organización",
+      "effect": { "target": "all", "stat": "velocityBonus", "value": 1 },
+      "minMaturity": { "dx": 2 }
+    },
+    {
+      "id": "data_unlocks_personalization",
+      "requires": ["data", "core"],
+      "description": "Data + Core habilita features de personalización para clientes",
+      "effect": { "target": "clients", "stat": "healthBonus", "value": 10 },
+      "minMaturity": { "data": 2, "core": 2 }
+    },
+    {
+      "id": "security_prevents_incidents",
+      "requires": ["security"],
+      "description": "Security madura reduce probabilidad de incidentes críticos",
+      "effect": { "target": "events", "stat": "incidentChanceReduction", "value": 0.5 },
+      "minMaturity": { "security": 3 }
+    },
+    {
+      "id": "platform_reduces_infra_cost",
+      "requires": ["platform"],
+      "description": "Platform optimizada reduce costos de infra",
+      "effect": { "target": "finance", "stat": "infraCostMultiplier", "value": 0.8 },
+      "minMaturity": { "platform": 4 }
+    }
+  ]
+}
