@@ -1,0 +1,64 @@
+{
+  "architectures": {
+    "monolith": {
+      "label": "Monolito",
+      "description": "Todo en un solo servicio desplegable",
+      "infraCostMultiplier": 0.5,
+      "onboardingSprintsCost": 1,
+      "velocityBonus": 2,
+      "scalingLimit": 8,
+      "techDebtAcceleration": 1.5,
+      "migrationCost": 0,
+      "pros": ["Velocidad inicial", "Simple de operar", "Bajo costo"],
+      "cons": ["Escala mal", "Deuda exponencial", "Bus factor alto"]
+    },
+    "modular_monolith": {
+      "label": "Monolito Modular",
+      "description": "Monolito con fronteras bien definidas entre módulos",
+      "infraCostMultiplier": 0.6,
+      "onboardingSprintsCost": 2,
+      "velocityBonus": 1,
+      "scalingLimit": 20,
+      "techDebtAcceleration": 1.0,
+      "migrationCost": 2,
+      "pros": ["Balance velocidad/estructura", "Fácil migrar después"],
+      "cons": ["Requiere disciplina", "Más lento que monolito puro"]
+    },
+    "microservices": {
+      "label": "Microservicios",
+      "description": "Servicios independientes por dominio",
+      "infraCostMultiplier": 2.0,
+      "onboardingSprintsCost": 4,
+      "velocityBonus": 0,
+      "scalingLimit": 999,
+      "techDebtAcceleration": 0.7,
+      "migrationCost": 6,
+      "pros": ["Escala infinito", "Equipos independientes", "Resiliencia"],
+      "cons": ["Complejidad operacional", "Requiere DevOps maduro", "Caro"]
+    },
+    "serverless": {
+      "label": "Serverless",
+      "description": "Funciones en la nube sin gestión de servidores",
+      "infraCostMultiplier": 0.8,
+      "onboardingSprintsCost": 3,
+      "velocityBonus": 1,
+      "scalingLimit": 50,
+      "techDebtAcceleration": 1.2,
+      "migrationCost": 4,
+      "pros": ["Bajo costo inicial", "Escala automático", "Sin ops"],
+      "cons": ["Vendor lock-in", "Cold starts", "Difícil debuggear"]
+    },
+    "event_driven": {
+      "label": "Event-Driven",
+      "description": "Comunicación asíncrona entre servicios via eventos",
+      "infraCostMultiplier": 1.5,
+      "onboardingSprintsCost": 5,
+      "velocityBonus": 0,
+      "scalingLimit": 999,
+      "techDebtAcceleration": 0.5,
+      "migrationCost": 8,
+      "pros": ["Alta resiliencia", "Desacoplado", "Auditable"],
+      "cons": ["Muy difícil debuggear", "Requiere equipo experto"]
+    }
+  }
+}

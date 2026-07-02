@@ -1,0 +1,64 @@
+{
+  "methodologies": {
+    "scrum": {
+      "label": "Scrum",
+      "description": "Sprints predecibles con ceremonias fijas",
+      "effects": {
+        "velocityMultiplier": 1.0,
+        "happinessModifier": 0,
+        "techDebtModifier": 0,
+        "adaptabilityRequirement": 0
+      },
+      "pros": ["Predecible", "Mejora continua", "Fácil de medir"],
+      "cons": ["Overhead de ceremonias", "Rígido ante cambios"]
+    },
+    "kanban": {
+      "label": "Kanban",
+      "description": "Flujo continuo sin cadencia fija",
+      "effects": {
+        "velocityMultiplier": 0.9,
+        "happinessModifier": 5,
+        "techDebtModifier": 2,
+        "adaptabilityRequirement": 0
+      },
+      "pros": ["Flexible", "Ideal para soporte", "Sin ceremonias"],
+      "cons": ["Difícil medir", "Sin cadencia clara"]
+    },
+    "shapeup": {
+      "label": "Shape Up",
+      "description": "Ciclos de 6 semanas con apuestas definidas",
+      "effects": {
+        "velocityMultiplier": 1.2,
+        "happinessModifier": 10,
+        "techDebtModifier": -5,
+        "adaptabilityRequirement": 6
+      },
+      "pros": ["Sin interrupciones", "Alta autonomía", "Menos ruido"],
+      "cons": ["Difícil con clientes que piden sprints", "Requiere madurez"]
+    },
+    "waterfall": {
+      "label": "Cascada",
+      "description": "Fases secuenciales con documentación completa",
+      "effects": {
+        "velocityMultiplier": 0.7,
+        "happinessModifier": -10,
+        "techDebtModifier": -10,
+        "adaptabilityRequirement": 0
+      },
+      "pros": ["Documentación sólida", "Clientes enterprise lo exigen"],
+      "cons": ["Lento", "Difícil cambiar requisitos"]
+    },
+    "dualtrack": {
+      "label": "Dual Track",
+      "description": "Discovery y delivery en paralelo",
+      "effects": {
+        "velocityMultiplier": 1.1,
+        "happinessModifier": 5,
+        "techDebtModifier": -3,
+        "adaptabilityRequirement": 7
+      },
+      "pros": ["Valida antes de construir", "Alta calidad de producto"],
+      "cons": ["Requiere mucha madurez", "Costoso en headcount"]
+    }
+  }
+}
