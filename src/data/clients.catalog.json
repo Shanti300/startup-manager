@@ -1,0 +1,46 @@
+{
+  "types": {
+    "startup": {
+      "label": "Startup Cliente",
+      "revenueRange": [500, 2000],
+      "healthDecayRate": 5,
+      "demandLevel": "alta",
+      "onboardingSprints": 1,
+      "churnThreshold": 30,
+      "traits": ["Piden features rápido", "Pagan poco", "Pivotean constantemente", "Muy exigentes con velocidad"]
+    },
+    "smb": {
+      "label": "SMB",
+      "revenueRange": [2000, 6000],
+      "healthDecayRate": 3,
+      "demandLevel": "media",
+      "onboardingSprints": 2,
+      "churnThreshold": 25,
+      "traits": ["Soporte frecuente", "Estabilizan cashflow", "Lentos para decidir", "Leales si están felices"]
+    },
+    "enterprise": {
+      "label": "Enterprise",
+      "revenueRange": [8000, 25000],
+      "healthDecayRate": 2,
+      "demandLevel": "baja",
+      "onboardingSprints": 4,
+      "churnThreshold": 20,
+      "traits": ["Exigen SLAs", "Requieren documentación", "Pagan bien pero tarde", "Necesitan metodología Cascada"]
+    },
+    "government": {
+      "label": "Gobierno",
+      "revenueRange": [15000, 50000],
+      "healthDecayRate": 1,
+      "demandLevel": "muy baja",
+      "onboardingSprints": 6,
+      "churnThreshold": 15,
+      "traits": ["Burocracia extrema", "Contratos largos", "Pago muy lento", "Estabilidad garantizada"]
+    }
+  },
+  "companyNames": [
+    "TechFlow", "DataBridge", "CloudNest", "PivotLabs", "ScaleOps",
+    "NexaCore", "SyncWave", "LoopStack", "GridMind", "ByteForge",
+    "Ministerio de Digitalización", "Secretaría de Innovación",
+    "Fenix Retail", "Grupo Andina", "Comercial Nova"
+  ]
+}

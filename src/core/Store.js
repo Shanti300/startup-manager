@@ -143,7 +143,14 @@ function reduce(state, action) {
       }
     case 'CLIENT_ADD':
       return { ...state, clients: [...state.clients, action.payload] }
-
+      
+    case 'CLIENT_UPDATE':
+      return {
+        ...state,
+        clients: state.clients.map((c) =>
+          c.id === action.payload.id ? { ...c, ...action.payload.changes } : c
+        ),
+      }
     case 'CLIENT_REMOVE':
       return {
         ...state,
